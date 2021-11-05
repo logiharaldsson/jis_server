@@ -21,28 +21,28 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const database = {
-    users: [
-        {
-            id: 1,
-            name: 'B3-6#1',
-            sex: 'Strákar',
-            age: '3-6',
-            boxnumber: 1,
-            count: 5
+// const database = {
+//     users: [
+//         {
+//             id: 1,
+//             name: 'B3-6#1',
+//             sex: 'Strákar',
+//             age: '3-6',
+//             boxnumber: 1,
+//             count: 5
 
-        },
-        {
-            id: 2,
-            name: 'G7-10#2',
-            sex: 'Stelpur',
-            age: '7-10',
-            boxnumber: 2,
-            count: 10
+//         },
+//         {
+//             id: 2,
+//             name: 'G7-10#2',
+//             sex: 'Stelpur',
+//             age: '7-10',
+//             boxnumber: 2,
+//             count: 10
 
-        }
-    ]
-}
+//         }
+//     ]
+// }
 
 app.get('/:id', (req, res) => {
     // const {id} = req.params['id'];
